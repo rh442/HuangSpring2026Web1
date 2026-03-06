@@ -1,0 +1,54 @@
+body{
+    background-color: #4F6633;
+    color: #6DA629
+}
+#wrapper{
+    background-color: #39283C;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header, nav , main, footer{
+    padding: 20px;
+    border: 2px solid #C61AE6
+}
+nav{
+    margin: 0 auto;
+}
+nav a{
+    margin: 0 4%;
+    
+}
+nav a:hover{
+    background-color: #823091;
+
+}
+a{
+    text-decoration: none;
+    color: #6DA629;
+}
+main h2{
+    background-color: #823091;
+    padding: 6px 0px;
+    border-bottom: 10 solid #000;
+    margin: 40px 0px 0px 0px;
+}
+
+div.imageContainer{
+    background-color: #fff;
+    background-image: url(images/woodwall.jpg);
+    padding:20px;
+    border: 11px solid #823091;
+}
+div.imageContainer img{
+    width:200px;
+    height:200px;
+        border: 11px solid #39283C;
+        margin: 22px;
+        padding: 40px;
+        background-color: #823091;
+        background-image: url(images/Parchment.webp);
+}
+footer a{
+    color:#7CE600
+}
