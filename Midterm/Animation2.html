@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="index.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Redressed&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
+<div class="wrapper">
+
+        <header>
+            <h1>Raymond Huang</h1>
+        </header>
+
+        <main class="clock_bg">
+           <div class="clock">
+                <div class="hand"></div>
+                <div class="second"></div>
+                <div class = 'center'></div>
+           </div>
+           
+        </main>
+
+        <nav>
+           <ul>
+                <li><a href='./index.html'>Home</a></li>
+                <li><a href="./Animation1.html">Snake</a></li>
+                <li class="selected"><a href="./Animation2.html">Clock</a></li>
+                <li><a href="./Animation3.html">Rainbow</a></li>
+            </ul>
+            
+        </nav>
+        <aside>
+            <h1>Clock</h1>
+            <p>Obviously inspired by a Clock. I had to look up how to do rotation animamtion as W3 School didn't show rotation. This is 4 divs again, clock, second hand, minute hand, and the center screw. Only the hands are moving</p>
+            <br>
+            <p>
+                The 2 moving parts, the minutes hand and seconds hand share the same animation, just played at different speeds. They both spin from 0 to 360 degrees at linear timing, one has a duration of 4 seconds while the other 20 seconds
+            </p>
+        </aside>
+       
+        <footer>
+            <h2>Raymond Huang &copy; 2026</h2>
+        </footer>
+
+    </div>
+</body>
+</html>
