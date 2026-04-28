@@ -1,0 +1,66 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    color: #3a241d;
+    text-align: center;
+}
+
+#left-container {
+    left: 0px;
+    background-color: red;
+    border-right: solid black 5px;
+}
+
+#right-container {
+    right: 0px;
+    background-color: red;
+    border-left: solid black 5px;
+}
+
+.container {
+    background-color: #eee;
+    width: 288px;              /* 2 columns of 144px */
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: visible;
+}
+
+.Pika-holder-left,
+.Pika-holder-right {
+    position: relative;
+    height: calc(25vh - 10px);
+    width: 144px;
+    left: 0px;
+    overflow: visible;
+}
+
+.Pika {
+    position: absolute;
+    width: 144px;
+    height: 125px;
+    max-width: none;
+    max-height: none;
+    z-index: 2;
+}
+
+#puzzle-holder img {
+    height: 500px;
+	width: auto;
+    opacity: .5;
+}
+
+#puzzle-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+    margin: 0 298px;           /* clear the wider sidebars */
+}
