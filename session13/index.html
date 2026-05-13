@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jquery Assignment</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo-dropdown">
+            <img src="./images/solar_system.png">
+        </div>
+        <div class="nav">
+            <ul>
+                <li id="Sun">Sun</li>
+                <li id="Mercury">Mercury</li>
+                <li id="Venus">Venus</li>
+                <li id="Earth">Earth</li>
+                <li id="Mars">Mars</li>
+                <li id="Jupiter">Jupiter</li>
+                <li id="Saturn">Saturn</li>
+                <li id="Uranus">Uranus</li>
+                <li id="Neptune">Neptune</li>
+            </ul>
+        </div>
+        <div class="planet-image">
+            <img class="planet" src="" alt="planets">
+        </div>
+
+        <div class="context">
+            <h2>Content</h2>
+            <br>
+            <p>Lorem ipsum blah blah blah</p>
+        </div>
+    </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+            $(function() {
+            // Toggle the slide effect
+            $(".logo-dropdown").on("click", function() {
+                $(".nav").slideToggle("slow");
+            });
+
+             $("#Sun").on("click",loadSun)
+             $("#Mercury").on("click",loadMercury)
+             $("#Venus").on("click",loadVenus)
+
+
+        });
+    
+        function loadSun(){
+            $(".planet").hide();
+            $(".context").hide();
+            $(".planet").attr("src", "./images/sun.png");
+            $(".context").load("./text/sun.html");
+            $(".planet").fadeIn("slow");
+            $(".context").fadeIn("slow");
+        }
+        function loadMercury(){
+             $(".planet").hide();
+            $(".context").hide();
+            $(".planet").attr("src", "./images/Mercury.png");
+            $(".context").load("./text/Mercury.html");
+            $(".planet").fadeIn("slow");
+            $(".context").fadeIn("slow");
+        }
+        function loadVenus(){
+             $(".planet").hide();
+            $(".context").hide();
+            $(".planet").attr("src", "./images/Venus.png");
+            $(".context").load("./text/Venus.html");
+            $(".planet").fadeIn("slow");
+            $(".context").fadeIn("slow");
+        }
+
+    </script>
+</body>
+
+</html>

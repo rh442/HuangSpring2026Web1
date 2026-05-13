@@ -1,0 +1,73 @@
+.wrapper{
+    background-image: url('./images/space.jpg');
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+    grid-template-rows: repeat(12,minmax(0,1fr));
+}
+*,body{
+    margin: 0;
+    padding: 0;
+}
+.logo-dropdown{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    aspect-ratio: 1/1;
+    
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.logo-dropdown img{
+    width: 75px;
+    cursor: pointer;
+}
+.planet-image{
+    grid-column: 3/6;
+    grid-row: 4/7;
+    aspect-ratio: 1/1;
+    
+   
+}
+.planet-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    
+}
+.context{
+    grid-column: 7/12;
+    grid-row: 4/10;
+    line-height: 2;
+    color: white;
+    display: none;
+    overflow-y: auto;
+}
+.context h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.context p{
+    font-size: 20px;
+    
+}
+.nav{
+    background-color: rgb(128,128,128,.7);
+    grid-column: 1/2;
+    grid-row: 3/12;
+    text-align: center;
+    display: none;
+
+}
+.nav li{
+    margin-bottom: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav li:hover{
+    background-color: darkgray;
+}
